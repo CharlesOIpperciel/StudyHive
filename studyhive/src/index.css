@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+.geometric-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Images/LoginBackground.png');
+  animation: translateYBackground 50s linear infinite;
+}
+
+@keyframes translateYBackground {
+  from {
+    background-position: 0 0; /* Start position */
+  }
+  to {
+    background-position: 0 100%; /* End position */
+  }
+}
