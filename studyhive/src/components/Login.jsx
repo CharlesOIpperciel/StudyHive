@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth, app } from '../FireBase';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import StudyHiveLogo from '../Images/StudyHiveLogo2.png';
+import StudyHiveLogo from '../../../../CharlesOIpperciel.github.io/Projects/StudyHive/ProjectImages/StudyHiveLogo2.png';
 
 function Login() {
     const [email, setEmail] = useState("");
