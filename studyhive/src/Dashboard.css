@@ -1,0 +1,35 @@
+.Dashboard-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    width: 100%; /* Make the nav bar take full width */
+}
+
+.Dashboard-nav button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00; /* Bee hive yellow */
+    border: 1px solid #333; /* Dark border */
+    color: #333;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.Dashboard-nav button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+.Dashboard-nav button:active {
+    background-color: #cc9900; /* Even darker yellow on click */
+}
+
+.navbar-logo {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and buttons */
+    border-radius: 50%; /* Round edges */
+}
