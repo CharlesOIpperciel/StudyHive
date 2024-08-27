@@ -1,4 +1,4 @@
-# StudyHive 🐝 📚 Under development ⚠️
+# StudyHive - Under Development  🐝 📚 ⚠️
 
 StudyHive is an application designed to help students organize and manage their schoolwork efficiently by classifying documents based on school classes.
 
