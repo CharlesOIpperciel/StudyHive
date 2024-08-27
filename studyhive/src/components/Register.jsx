@@ -2,7 +2,7 @@
 import { FaArrowLeft } from 'react-icons/fa';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, app } from "../FireBase";
-import StudyHiveLogo from '../../../../CharlesOIpperciel.github.io/Projects/StudyHive/ProjectImages/StudyHiveLogo2.png';
+import StudyHiveLogo from '../Images/StudyHiveLogo2.png';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 

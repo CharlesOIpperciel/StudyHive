@@ -1,0 +1,56 @@
+.Dashboard {
+    padding: 20px;
+}
+
+.add-class-container, .add-folder-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.class {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.class-name {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.folders {
+    margin-top: 10px;
+}
+
+.folder {
+    margin-top: 10px;
+}

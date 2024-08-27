@@ -1,48 +1,15 @@
-// studyhive/src/components/Login.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth, app } from '../FireBase';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import StudyHiveLogo from '../../../../CharlesOIpperciel.github.io/Projects/StudyHive/ProjectImages/StudyHiveLogo2.png';
+import StudyHiveLogo from '../Images/StudyHiveLogo2.png';
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [shake, setShake] = useState(false);
-    const [h1Text, setH1Text] = useState("");
     const navigate = useNavigate();
-
-    useEffect(() => {
-        const texts = ["Store Smarter", "Study Better"];
-        let index = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        const type = () => {
-            setH1Text((prev) => isDeleting ? prev.slice(0, -1) : texts[index].slice(0, charIndex + 1));
-            if (!isDeleting) {
-                if (charIndex < texts[index].length) {
-                    charIndex++;
-                } else {
-                    isDeleting = true;
-                    setTimeout(type, 1000); // Pause before deleting
-                    return;
-                }
-            } else {
-                if (charIndex > 0) {
-                    charIndex--;
-                } else {
-                    isDeleting = false;
-                    index = (index + 1) % texts.length;
-                }
-            }
-            const randomSpeed = Math.random() * (300 - 100) + 100; // Random speed between 100ms and 300ms
-            setTimeout(type, randomSpeed);
-        };
-
-        type();
-    }, []);
 
     const signIn = (e) => {
         e.preventDefault();
@@ -62,9 +29,9 @@ function Login() {
     return (
         <div className={`flex items-center justify-center min-h-screen geometric-background ${shake ? 'shake' : ''}`}>
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-[500px] h-auto min-h-[600px]">
-                <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Store Better</span> Study
-                    Smarter.
+                <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl black">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Store Better</span>
+                    <span className="outline-black"> Study Smarter.</span>
                 </h1>
                 <img src={StudyHiveLogo} alt="StudyHive Logo" className="mx-auto mb-6 w-40 h-40 rounded-full"/>
                 <form onSubmit={signIn}>
